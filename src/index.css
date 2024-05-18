@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inria Serif', serif; 
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.app{
+  position: absolute;
+}
+
+/* ------------------NAVBAR-------------------- */
+
+.navbar{
+  height: 20.8vh;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+}
+
+.navlink{
+  text-decoration: none;
+  padding: 14px;
+  font-size: 14px;
+  text-transform: capitalize;}
+
+/* ------------------Home-------------------- */
+
+
+.home{
+  display: flex;
+  flex-direction: column;
+}
+
+.home1{
+  height: 80vh;
+  width: 100%;
+}
+
+.home1 img{
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home2{
+  background-color: aqua;
+  text-align: center;
+  padding: 9.1vh;
+}
+
+.home2 h2{
+  font-size: 150px;
+}
+
+.home2 p{
+  font-size: 34px;
+}
+
+/* ------------------Footer-------------------- */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer1{
+  display: flex;
+  height: 60vh;
+  align-items: center;
+}
+
+.footer2{
+  height: 100%;
+  width: 55vh;
+  padding-left: 10px;
+}
+
+.footer2 img{
+  height: 100%;
+  width: 65vh;
+  object-fit: cover;
+}
+
+.footer3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.footer4{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footlink{
+  text-decoration: none;
+  padding-right: 100px;
+}
+
+.footlink1{
+  text-decoration: none;
+}
+
+.footer5{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer5 img{
+  height: 147px;
+  width: 192px;
+  padding-right: 17px;
+}
+
+.footer6{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer6 li{
+  padding: 0 7.3vh 0 ;
+}
+
+
+/* ------------------SERVICE-------------------- */
+
+.service{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.service1{
+  height: 100vh;
+  background: url(./components/images/pexels-fotoaibe-1571460.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.service1 h1{
+  font-size: 150px;
+  text-transform: capitalize;
+}
+
+.service2{
+  display: flex;
+  flex-direction: column;
+}
+
+.service3{
+  display: flex;
+  height: fit-content;
+  width: 1246px;
+  padding: 30px;
+  background-color: #F5F3F1;
+  margin: 5vh;
+}
+
+.service3 div{
+  padding: 0 0 0 40px;
+  align-self: center;
+}
+
+.service3 div h3{
+  font-size: 45px;
+}
+
+.service3 div p{
+  font-size: 34px;
+}
+
+.service-images{
+  height: 327px;
+  width: 591px;
+}
+
+
+/* ------------------ABOUT-------------------- */
+
+.about2{
+  margin-top: 50vh;
+  background-color: #F3F0EE;
+  text-align: center;
+}
+
+/* ------------------PORTFOLIO-------------------- */
+
+
+.portfolio1{
+  height: 120vh;
+  background: url(./components/images/pexels-fotoaibe-1571460.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio1 h1{
+  font-size: 250px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.portfolio2{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+  justify-content: center;
+}
+
+.portfolio3{
+  background-color: #F5F3F1;
+  width: 330px;
+  padding: 20px;
+  margin: 0 5vh 5vh 5vh;
+  text-align: center;
+}
+
+.portfolio3 button{
+  color: #B6B4AF;
+  background: none;
+  border: 3px solid #B6B4AF;
+  border-radius: 15px;
+  width: 215px;
+  height: 70px;
+  font-size: 21px;
+  text-transform: capitalize;
+}
+
+.portfolio3 button:hover{
+  background-color: #B6B4AF;
+  color: #F5F3F1;
+}
+
+.portfolio3_6 h3{
+  font-size: 62px;
+  font-weight: normal;
+}
+
+.portfolio3_6 p{
+  font-size: 23px;
+}
+
+.portfolio3_5{
+  height: 250px;
+  width: 330px;
+}
+
+.portfolio3_5 img{
+  height: 250px;
+  width: 330px;
+  object-fit: cover;
+}
+
+
+/* ------------------CONTACT-------------------- */
+
+/* .contact{
+  width: 100%;
+  background-color: aqua;
+}
+
+.contact1{
+  height: 60vh;
+  background: url(./components/images/pexels-fotoaibe-1571460.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
