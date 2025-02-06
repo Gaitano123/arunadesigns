@@ -10,15 +10,13 @@ function Footer(){
     return(
         <div className="footer">
             <div className="footer1">
-                <div className="footer2">
-                    <img src={image1} />
-                </div>
+                <img className="footer2" src={image1} />
                 <div className="footer3">
                     <ul className="footer4">
-                        <li><NavLink className='footlink'>contact</NavLink></li>
+                        <li><NavLink className='footlink' to={"/contact"}>contact</NavLink></li>
                         <li><NavLink className='footlink'>portfolio</NavLink></li>
                         <li><NavLink className='footlink'>privacy terms</NavLink></li>
-                        <li><NavLink className='footlink1'>instagram</NavLink></li>
+                        <li><NavLink className='footlink'>instagram</NavLink></li>
                     </ul>
                     <div className="footer5">
                         <img src={image2} alt="footer-image" />
@@ -29,8 +27,8 @@ function Footer(){
                 </div>
             </div>
             <ul  className="footer6">
-                <li>aruna interiors ltd</li>
-                <li>riverside drive, Nairobi Kenya</li>
+                <li>Aruna Interiors Ltd</li>
+                <li>Riverside Drive, Nairobi Kenya</li>
                 <li>Email: info@laylainteriors.com</li>
                 <li>Tel: +254 797959562</li>
             </ul>

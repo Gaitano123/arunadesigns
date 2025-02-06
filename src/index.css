@@ -9,7 +9,7 @@ body {
 }
 
 .app{
-  position: absolute;
+  width: 100%;
 }
 
 /* ------------------NAVBAR-------------------- */
@@ -18,6 +18,7 @@ body {
   height: 20.8vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 1000;
   position: absolute;
   width: 100%;
@@ -27,6 +28,7 @@ body {
 }
 
 .navbar ul{
+  flex-grow: 1;
   list-style: none;
   display: flex;
 }
@@ -34,8 +36,22 @@ body {
 .navlink{
   text-decoration: none;
   padding: 14px;
-  font-size: 14px;
-  text-transform: capitalize;}
+  font-size: 1em;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.logo{
+  position: absolute;
+  height: 7.0em;
+  width: 7em;
+}
+
+.img_logo{
+  height: 7.0em;
+  width: 7em;
+  object-fit: cover;
+}
 
 /* ------------------Home-------------------- */
 
@@ -46,99 +62,205 @@ body {
 }
 
 .home1{
-  height: 80vh;
+  height: 39em;
+  background: url(./components/images/pexels-fotoaibe-1571460.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
-}
-
-.home1 img{
-  height: 80vh;
-  width: 100%;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home2{
-  background-color: aqua;
   text-align: center;
   padding: 9.1vh;
 }
 
 .home2 h2{
-  font-size: 150px;
+  font-size: 5em;
 }
 
 .home2 p{
   font-size: 34px;
 }
 
+.home3{
+  display: flex;
+  padding: 2em;
+}
+
+.our_company{
+  width: 50%;
+}
+
+.our_company h2{
+  font-size: 4em;
+}
+
+.our_company p{
+  font-size: 2em;
+}
+
+.home_image{
+  width: 50%;
+  padding: 1em;
+}
+
+.home_image1{
+  height: 25em;
+  width: 100%;
+}
+
+.home_images{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.9em;
+}
+
+.home_image2{
+  height: 13em;
+  width: 18.5em; 
+}
+
+.home_button{
+  width: 9em;
+  height: 3.5em;
+  font-size: 1.3em;
+  border-radius: 0.8em;
+  margin: 0 0 0 2em;
+  border: 0.1em solid #A8A6A1; 
+  color: #A8A6A1;
+  background-color: #fff;
+}
+
+.home_button:hover{
+  color: white;
+  background-color: #A8A6A1;
+}
+
+.home4{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9em;
+}
+
+.latest_div{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.home4 h2{
+  font-size: 4em;
+  text-align: center;
+}
+
+.project_div{
+  background-color: #F5F3F1;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2em;
+  position: relative; 
+}
+
+.project_div2{
+  position: absolute;
+  left: 50%; /* Centers it */
+  transform: translateX(-50%); /* Centers horizontally */
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a background */
+  color: white;
+  text-align: center;
+  width: 20em;
+}
+
+.project_div2 h2{
+  font-size: 2em;
+}
+
+.project_img{
+  height: 25em;
+  width: 20em;
+  position: relative;
+}
+
 /* ------------------Footer-------------------- */
 
 .footer{
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   width: 100%;
+  background-color: #F6F5F3;
+  height: 36.5em;
 }
 
 .footer1{
   display: flex;
-  height: 60vh;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
 .footer2{
-  height: 100%;
-  width: 55vh;
-  padding-left: 10px;
-}
-
-.footer2 img{
-  height: 100%;
-  width: 65vh;
-  object-fit: cover;
+  height: 30em;
+  width: 25em;
+  padding: 1em;
 }
 
 .footer3{
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  padding: 2em;
 }
 
 .footer4{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .footlink{
   text-decoration: none;
-  padding-right: 100px;
-}
-
-.footlink1{
-  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  color: #000;
+  padding-right: 3em;
+  padding-bottom: 3em
 }
 
 .footer5{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .footer5 img{
-  height: 147px;
-  width: 192px;
-  padding-right: 17px;
+  height: 9em;
+  width: 12em;
+  padding-right: 1.2em;
 }
 
 .footer6{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em 0 2em 0 ;
+  background-color: #F6F5F3;
 }
 
 .footer6 li{
-  padding: 0 7.3vh 0 ;
+  font-size: 1.5em;
+  padding: 0 4em 1em 0;
 }
 
 
@@ -148,11 +270,12 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 3em;
 }
 
 
 .service1{
-  height: 100vh;
+  height: 39em;
   background: url(./components/images/pexels-fotoaibe-1571460.jpg);
   background-size: cover;
   background-position: center;
@@ -164,56 +287,165 @@ body {
 
 
 .service1 h1{
-  font-size: 150px;
+  font-size: 10em;
+  font-weight: normal;
+  color: #fff;
   text-transform: capitalize;
 }
 
 .service2{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .service3{
   display: flex;
   height: fit-content;
-  width: 1246px;
-  padding: 30px;
+  width: 75em;
+  padding: 2em;
   background-color: #F5F3F1;
-  margin: 5vh;
+  margin: 3em;
 }
 
 .service3 div{
-  padding: 0 0 0 40px;
+  padding: 0 0 0 2.5em;
   align-self: center;
 }
 
 .service3 div h3{
-  font-size: 45px;
+  font-size: 2.3em; 
 }
 
 .service3 div p{
-  font-size: 34px;
+  font-size: 1.7em;
 }
 
 .service-images{
-  height: 327px;
-  width: 591px;
+  height: 23em;
+  width: 35em;
 }
 
 
 /* ------------------ABOUT-------------------- */
+.about{
+  display: flex;
+  flex-direction: column;
+}
+
+.about1{
+  height: 39em;
+  background: url(./components/images/pexels-fotoaibe-1571460.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about1 h1{
+  font-size: 10em;
+  font-weight: normal;
+  color: #fff;
+  text-transform: capitalize;
+}
 
 .about2{
-  margin-top: 50vh;
-  background-color: #F3F0EE;
+  background-color: #F5F3F1;
   text-align: center;
+  margin: 10vh 0 15vh 0;
+  height: fit-content;
+  align-self: center;
+  padding: 5vh 10vh 5vh 10vh;
+  width: 170vh;
 }
+
+.about2 h2{
+  font-size: 45px;
+}
+
+.about2 p{
+  font-size: 34px;
+}
+
+.about3{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 70px 0 40px;
+  margin: 0 0 25vh 0;
+}
+
+.about3_2{
+  display: flex;
+}
+
+.about3_1{
+  background-color: #F5F3F1;
+  height: fit-content;
+  width: 700px;
+  padding: 0 30px 0 30px;
+}
+
+.about3_1 h3{
+  font-size: 72px;
+}
+
+.about3_1 p{
+  font-size: 34px;
+}
+
+.about3_3{
+  padding-left: 60px;
+}
+
+.abt_img{
+  height: 270px;
+  width: 285px;
+  object-fit: cover;
+}
+
+.hgt{
+  margin-top: 18px;
+}
+
+.abt_img1{
+  height: 560px;
+  width: 290px;
+}
+
+.about4{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 25vh 0;
+}
+
+.about4_1{
+  background-color: #F5F3F1;
+  height: fit-content;
+  width: 640px;
+  padding: 0 30px 0 30px;}
+
+.about4_1 h3{
+  font-size: 72px;
+}
+
+.about4_1 p{
+  font-size: 34px;
+}
+
+.about4_2{
+  height: 515px;
+  width: 605px;
+  object-fit: cover;
+}
+
 
 /* ------------------PORTFOLIO-------------------- */
 
 
 .portfolio1{
-  height: 120vh;
+  height: 39em;
   background: url(./components/images/pexels-fotoaibe-1571460.jpg);
   background-size: cover;
   background-position: center;
@@ -224,34 +456,37 @@ body {
 }
 
 .portfolio1 h1{
-  font-size: 250px;
+  font-size: 10em;
   font-weight: normal;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .portfolio2{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10vh;
+  margin-top: 5em;
   justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .portfolio3{
   background-color: #F5F3F1;
-  width: 330px;
-  padding: 20px;
-  margin: 0 5vh 5vh 5vh;
+  width: 20em;
+  padding: 2em;
+  margin-bottom: 5em;
   text-align: center;
 }
 
 .portfolio3 button{
   color: #B6B4AF;
   background: none;
-  border: 3px solid #B6B4AF;
-  border-radius: 15px;
-  width: 215px;
-  height: 70px;
-  font-size: 21px;
+  border: 0.13em solid #B6B4AF;
+  border-radius: 0.5em;
+  width: 10em;
+  height: 3em; 
+  font-size: 1.3em;
   text-transform: capitalize;
 }
 
@@ -261,42 +496,116 @@ body {
 }
 
 .portfolio3_6 h3{
-  font-size: 62px;
+  font-size: 2em;
   font-weight: normal;
 }
 
 .portfolio3_6 p{
-  font-size: 23px;
+  font-size: 1.3em;
 }
 
 .portfolio3_5{
-  height: 250px;
-  width: 330px;
+  height: 15em;
+  width: 20em;
 }
 
 .portfolio3_5 img{
-  height: 250px;
-  width: 330px;
+  height: 15em;
+  width: 20em;
   object-fit: cover;
 }
 
 
 /* ------------------CONTACT-------------------- */
 
-/* .contact{
-  width: 100%;
-  background-color: aqua;
-}
-
 .contact1{
-  height: 60vh;
+  height: 39em;
   background: url(./components/images/pexels-fotoaibe-1571460.jpg);
   background-size: cover;
   background-position: center;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
+.contact1 h1{
+  font-size: 10em;
+  font-weight: normal;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.contact2{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 5em;
+}
+
+.contact2_1{
+  width: 40em;
+  padding: 2em;
+}
+
+.contact2_1 h3{
+  font-size: 4em;
+  font-weight: normal;
+}
+
+.contact2_1 p{
+  font-size: 1.5em;
+}
+
+.contact2_2{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+.contact2_2 label{
+  display: flex;
+  flex-direction: column;
+}
+
+.mgn{
+  margin-top: 1.5em;
+}
+
+.contact2_2 label input{
+  height: 3em;
+}
+
+.contact2_2 label textarea{
+  height: 5em;
+}
+
+.contact2_3{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.pd{
+  padding-right: 1em;
+}
+
+.contact2_3 label input{
+  width: 20em;
+  height: 3em;
+}
+
+.contact2_2 button{
+  font-size: 1em;
+  width: 6em;
+  height: 3em;
+  border-radius: 0.7em;
+  background: none;
+  border: 0.2em solid #000;
+}
+
+.contact2_2 button:hover{
+  background-color: #000;
+  color: #fff;
+}
 
 
