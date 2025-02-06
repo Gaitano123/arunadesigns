@@ -41,6 +41,7 @@ body {
   color: #fff;
 }
 
+
 .logo{
   position: absolute;
   height: 7.0em;
@@ -72,17 +73,22 @@ body {
   align-items: center;
 }
 
-.home2{
-  text-align: center;
-  padding: 9.1vh;
+.home2 {
+  text-align: justify;
+  text-align-last: center;
+  padding: 3em 0 0 0;
+  max-width: 80%; /* Ensures better formatting */
+  margin: 0 auto; /* Centers the div itself */
 }
-
 .home2 h2{
   font-size: 5em;
+  font-family: "Allura", serif;
 }
 
 .home2 p{
-  font-size: 34px;
+  font-size: 1.6em;
+  font-family: 'Bacasime Antique', serif; 
+  font-weight: 100;
 }
 
 .home3{
@@ -96,10 +102,13 @@ body {
 
 .our_company h2{
   font-size: 4em;
+  font-family: "Playfair Display", serif;
 }
 
 .our_company p{
-  font-size: 2em;
+  font-size: 1.6em;
+  font-family: 'Bacasime Antique', serif; 
+  font-weight: 100;
 }
 
 .home_image{
@@ -154,6 +163,7 @@ body {
 .home4 h2{
   font-size: 4em;
   text-align: center;
+  font-family: "Allura", serif;
 }
 
 .project_div{
@@ -177,6 +187,7 @@ body {
   width: 20em;
 }
 
+
 .project_div2 h2{
   font-size: 2em;
 }
@@ -195,7 +206,6 @@ body {
   flex-direction: column;
   width: 100%;
   background-color: #F6F5F3;
-  height: 36.5em;
 }
 
 .footer1{
@@ -234,7 +244,8 @@ body {
   text-underline-offset: 0.2em;
   color: #000;
   padding-right: 3em;
-  padding-bottom: 3em
+  margin-bottom: 1em;
+  display: inline-block;
 }
 
 .footer5{
@@ -254,12 +265,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1em 0 2em 0 ;
+  padding: 1em 0 0 0 ;
   background-color: #F6F5F3;
 }
 
 .footer6 li{
-  font-size: 1.5em;
+  font-size: 1.6em;
   padding: 0 4em 1em 0;
 }
 
@@ -288,7 +299,7 @@ body {
 
 .service1 h1{
   font-size: 10em;
-  font-weight: normal;
+  font-family: "Allura", serif;
   color: #fff;
   text-transform: capitalize;
 }
@@ -346,7 +357,7 @@ body {
 
 .about1 h1{
   font-size: 10em;
-  font-weight: normal;
+  font-family: "Allura", serif;
   color: #fff;
   text-transform: capitalize;
 }
@@ -457,7 +468,7 @@ body {
 
 .portfolio1 h1{
   font-size: 10em;
-  font-weight: normal;
+  font-family: "Allura", serif;
   color: #fff;
   text-transform: capitalize;
 }
@@ -531,7 +542,7 @@ body {
 
 .contact1 h1{
   font-size: 10em;
-  font-weight: normal;
+  font-family: "Allura", serif;
   color: #fff;
   text-transform: capitalize;
 }
@@ -607,5 +618,86 @@ body {
   background-color: #000;
   color: #fff;
 }
+
+/* ------------------PRIVACY-------------------- */
+
+.privacy1{
+  /* margin: 8em 0 0 0; */
+  padding: 13em 5em 5em 5em;
+  background-color: #E3E3E3;
+}
+
+.privacy2{
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy2 h3{
+  text-align: center;
+  font-size: 2em;
+}
+
+.privacy2 p{
+  font-size: 1.5em;
+}
+
+
+.privacy3{
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy3 h3{
+  font-size: 2em;
+}
+
+.privacy3 p{
+  font-size: 1.5em;
+}
+
+.privacy3 ul{
+  font-size: 1.5em;
+}
+
+/* ------------------PROJECTS-------------------- */
+
+.project2{
+  height: 39em;
+  background: url(./components/images/pexels-fotoaibe-1571460.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.project3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2em;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 3.5em;
+}
+
+
+.landscape{
+  height: 26em;
+  width: 30em;
+}
+
+.potrait{
+  height: 40em;
+  width: 30rem;
+}
+
+.landscape, .potrait {
+  flex-grow: 1; /* Forces images to take equal space */
+  object-fit: cover; /* Ensures images keep their aspect ratio */
+}
+
+
+
 
 

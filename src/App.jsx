@@ -6,6 +6,8 @@ import About from "./components/About"
 import Footer from "./components/Footer"
 import Portfolio from "./components/Portfolio"
 import Contact from "./components/Contact";
+import Privacy from "./components/Privacy";
+import Kilimani from "./components/projects/Kilimani";
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
         <Route path="/our-story" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-terms" element={<Privacy />}/>
+        <Route path="/kilimani" element={<Kilimani />}/>
       </Routes>
       <Footer />
     </div>

@@ -54,19 +54,19 @@ function Home(){
             <div className='home4'>
                 <h2>Latest Project</h2>
                 <div className='latest_div'>
-                    <div className='project_div'>
+                    <div className='project_div' onClick={() => {navigate("/kilimani"); scrollToTop();}}>
                         <img className='project_img' src={img} />
                         <div className='project_div2'>
                             <h2>kilimani</h2>
                         </div>
                     </div>
-                    <div className='project_div'>
+                    <div className='project_div' onClick={() => {navigate("/kilimani"); scrollToTop();}}>
                         <img className='project_img' src={img} />
                         <div className='project_div2'>
                             <h2>kilimani</h2>
                         </div>
                     </div>
-                    <div className='project_div'>
+                    <div className='project_div' onClick={() => {navigate("/kilimani"); scrollToTop();}}>
                         <img className='project_img' src={img} />
                         <div className='project_div2'>
                             <h2>kilimani</h2>
