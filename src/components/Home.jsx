@@ -31,6 +31,7 @@ function Home(){
     return(
         <div className='home'>
             <div className='home1'>
+                <h1>Arunah</h1>
             </div>
             <div className='home2'>
                 <h2>State of the art design studio</h2>
