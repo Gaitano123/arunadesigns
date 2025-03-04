@@ -7,21 +7,21 @@ import image4 from './images/pexels-pixabay-271816.jpg'
 import image5 from './images/pexels-pixabay-276724.jpg'
 
 
-function Footer(){
+function Footer() {
 
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-      const handleScroll = () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        setIsScrolled(scrollTop > 0);
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            setIsScrolled(scrollTop > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
     const scrollToTop = () => {
@@ -31,7 +31,7 @@ function Footer(){
         });
     };
 
-    return(
+    return (
         <div className="footer">
             <div className="footer1">
                 <img className="footer2" src={image1} />
@@ -50,7 +50,7 @@ function Footer(){
                     </div>
                 </div>
             </div>
-            <ul  className="footer6">
+            <ul className="footer6">
                 <li>Aruna Interiors Ltd</li>
                 <li>Riverside Drive, Nairobi Kenya</li>
                 <li>Email: info@laylainteriors.com</li>
